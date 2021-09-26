@@ -1,0 +1,34 @@
+{
+  "name": "boa-saude-informacoes-cadastrais",
+  "version": "1.0.0",
+  "description": "TCC da Pós de Arquitetura de Software distribuído pela PUC Minas",
+  "main": "./src/main/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/main/server.js",
+    "nodemonstart": "yarn nodemon node ./src/main/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OPthyago/tcc-puc-plano-saude.git"
+  },
+  "keywords": [
+    "TCC",
+    "PUC Minas"
+  ],
+  "author": "Thyago de Oliveira Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OPthyago/tcc-puc-plano-saude/issues"
+  },
+  "homepage": "https://github.com/OPthyago/tcc-puc-plano-saude#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^3.2.8"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fast-glob": "^3.2.7",
+    "nodemon": "^2.0.12",
+    "stomp-client": "^0.9.0"
+  }
+}

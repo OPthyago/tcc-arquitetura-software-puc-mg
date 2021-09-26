@@ -1,0 +1,559 @@
+<div class="wrapper">
+  <div class="main">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tim-title">
+              <div>
+                <!-- DESCRICAO -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Cadastro de Associado</h3>
+                    <dl>
+                      <dd>
+                        Nesta área, você pode cadastrar um associado preenchendo
+                        os campos abaixo.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <!-- FORM -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <section>
+                      <div class="card">
+                        <div class="card-body">
+                          <link
+                            rel="stylesheet"
+                            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                          />
+                          <link
+                            rel="stylesheet"
+                            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+                          />
+
+                          <form [formGroup]="associadoForm">
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="nomeAssociado"
+                                    name="nomeAssociado"
+                                    placeholder="Nome Completo do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="associadoNome"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cpfAssociado"
+                                    name="cpfAssociado"
+                                    placeholder="CPF do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="cpf"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="rgAssociado"
+                                    name="rgAssociado"
+                                    placeholder="RG do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="rg"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="dataNascimentoAssiciado"
+                                    name="dataNascimentoAssiciado"
+                                    placeholder="Data de Nascimento do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="dataNascimento"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <span
+                                  id="sexoAssociadoHelpBlock"
+                                  class="form-text text-muted"
+                                  >Sexo</span
+                                >
+                                <select
+                                  id="sexoAssociado"
+                                  name="sexoAssociado"
+                                  class="custom-select"
+                                  required="required"
+                                  formControlName="sexo"
+                                >
+                                  <option value="masculino">Masculino</option>
+                                  <option value="feminino">Feminino</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <!-- ENDEREÇO -->
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cepAssociado"
+                                    name="cepAssociado"
+                                    placeholder="CEP do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="cep"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="text"
+                                    name="text"
+                                    placeholder="Endereço do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="endereco"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="numeroEnderecoAssociado"
+                                    name="numeroEnderecoAssociado"
+                                    placeholder="Número"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="numero"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="bairroEnderecoAssociado"
+                                    name="bairroEnderecoAssociado"
+                                    placeholder="Bairro"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="bairro"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cidadeEnderecoAssociado"
+                                    name="cidadeEnderecoAssociado"
+                                    placeholder="Cidade"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="cidade"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="ufEnderecoAssociado"
+                                    name="ufEnderecoAssociado"
+                                    placeholder="UF"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="uf"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="filiacaoPrimariaAssociado"
+                                    name="filiacaoPrimariaAssociado"
+                                    placeholder="Filiação Primária"
+                                    type="text"
+                                    required="required"
+                                    class="form-control"
+                                    formControlName="filiacaoPrimaria"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="filiacaoSecundariaAssociado"
+                                    name="filiacaoSecundariaAssociado"
+                                    placeholder="Filiação Secundária"
+                                    type="text"
+                                    class="form-control"
+                                    formControlName="filiacaoSecundaria"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="estadoCivilAssociado"
+                                    name="estadoCivilAssociado"
+                                    placeholder="EstadoCivil"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="estadoCivil"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card-o"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="nomeConjugueAssociado"
+                                    name="nomeConjugueAssociado"
+                                    placeholder="Nome do Conjugue"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="nomeConjugue"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card-o"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cpfConjugueAssociado"
+                                    name="cpfConjugueAssociado"
+                                    placeholder="CPF do Conjugue"
+                                    type="text"
+                                    required="required"
+                                    class="form-control"
+                                    formControlName="cpfConjugue"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-mobile-phone"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="telefoneAssociado"
+                                    name="telefoneAssociado"
+                                    placeholder="Telefone"
+                                    type="text"
+                                    required="required"
+                                    class="form-control"
+                                    formControlName="telefone"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-mobile-phone"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="telefoneSecundarioAssociado"
+                                    name="telefoneSecundarioAssociado"
+                                    placeholder="Telefone Secundário"
+                                    type="text"
+                                    class="form-control"
+                                    formControlName="telefoneSecundario"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-at"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="emailAssociado"
+                                    name="emailAssociado"
+                                    placeholder="E-Mail do Associado"
+                                    type="text"
+                                    class="form-control"
+                                    formControlName="email"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book-o"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="contatoEmergenciaAssociado"
+                                    name="contatoEmergenciaAssociado"
+                                    placeholder="Contato de Emergência"
+                                    type="text"
+                                    class="form-control"
+                                    formControlName="contatoEmergencia"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-volume-control-phone"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="telefoneEmergenciaAssociado"
+                                    name="telefoneEmergenciaAssociado"
+                                    placeholder="Telefone de Emergência"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="telefoneEmergencia"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-10">
+                                <span
+                                  id="tipoContratoAssociadoHelpBlock"
+                                  class="form-text text-muted"
+                                  >Tipo do Contrato</span
+                                >
+                                <select
+                                  id="tipoContratoAssociado"
+                                  name="tipoContratoAssociado"
+                                  aria-describedby="tipoContratoAssociadoHelpBlock"
+                                  required="required"
+                                  class="custom-select"
+                                  formControlName="tipoContrato"
+                                >
+                                  <option value="enfermaria">Enfermaria</option>
+                                  <option value="apartamento">
+                                    Apartamento
+                                  </option>
+                                  <option value="vip">VIP</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <span
+                                  id="odontoAssociadoHelpBlock"
+                                  class="form-text text-muted"
+                                  >Odonto Ativo</span
+                                >
+                                <div
+                                  class="
+                                    custom-control
+                                    custom-radio
+                                    custom-control-inline
+                                  "
+                                >
+                                  <input
+                                    name="odontoAssociado"
+                                    id="odontoAssociado_0"
+                                    type="radio"
+                                    aria-describedby="odontoAssociadoHelpBlock"
+                                    class="custom-control-input"
+                                    formControlName="odontoAtivo"
+                                    [value]="true"
+                                  />
+                                  <label
+                                    for="odontoAssociado_0"
+                                    class="custom-control-label"
+                                    >Possui Odonto</label
+                                  >
+                                </div>
+                                <div
+                                  class="
+                                    custom-control
+                                    custom-radio
+                                    custom-control-inline
+                                  "
+                                >
+                                  <input
+                                    name="odontoAssociado"
+                                    id="odontoAssociado_1"
+                                    type="radio"
+                                    aria-describedby="odontoAssociadoHelpBlock"
+                                    class="custom-control-input"
+                                    [value]="false"
+                                    formControlName="odontoAtivo"
+                                  />
+                                  <label
+                                    for="odontoAssociado_1"
+                                    class="custom-control-label"
+                                    >Não Possui Odonto</label
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <button
+                                  name="submit"
+                                  type="submit"
+                                  class="btn btn-primary"
+                                  [disabled]="!this.associadoForm.valid"
+                                  (click)="cadastraAssociado()"
+                                >
+                                  Cadastrar Associado
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,336 @@
+<div class="wrapper">
+  <div class="main">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="tim-title">
+              <div>
+                <!-- DESCRICAO -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <h3>Cadastro de Prestador</h3>
+                    <dl>
+                      <dd>
+                        Nesta área, você pode cadastrar um prestador preenchendo
+                        os campos abaixo.
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <!-- FORM -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <section>
+                      <div class="card">
+                        <div class="card-body">
+                          <link
+                            rel="stylesheet"
+                            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+                          />
+                          <link
+                            rel="stylesheet"
+                            href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+                          />
+
+                          <form [formGroup]="prestadorForm">
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="nomePrestador"
+                                    name="nomePrestador"
+                                    placeholder="Nome Completo do Prestador"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="nomePrestador"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cpfPrestador"
+                                    name="cpfPrestador"
+                                    placeholder="CPF do Prestador"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="cpf"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="rgPrestador"
+                                    name="rgPrestador"
+                                    placeholder="RG do Prestador"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="rg"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-book"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="dataNascimentoAssiciado"
+                                    name="dataNascimentoAssiciado"
+                                    placeholder="Data de Nascimento do Prestador"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="dataNascimento"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <span
+                                  id="sexoPrestadorHelpBlock"
+                                  class="form-text text-muted"
+                                  >Sexo</span
+                                >
+                                <select
+                                  id="sexoPrestador"
+                                  name="sexoPrestador"
+                                  class="custom-select"
+                                  required="required"
+                                  formControlName="sexo"
+                                >
+                                  <option value="masculino">Masculino</option>
+                                  <option value="feminino">Feminino</option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <!-- ENDEREÇO -->
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cepPrestador"
+                                    name="cepPrestador"
+                                    placeholder="CEP do Prestador"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="cep"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="text"
+                                    name="text"
+                                    placeholder="Endereço do Prestador"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="endereco"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="numeroEnderecoPrestador"
+                                    name="numeroEnderecoPrestador"
+                                    placeholder="Número"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="numero"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="bairroEnderecoPrestador"
+                                    name="bairroEnderecoPrestador"
+                                    placeholder="Bairro"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="bairro"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="cidadeEnderecoPrestador"
+                                    name="cidadeEnderecoPrestador"
+                                    placeholder="Cidade"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="cidade"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="ufEnderecoPrestador"
+                                    name="ufEnderecoPrestador"
+                                    placeholder="UF"
+                                    type="text"
+                                    class="form-control"
+                                    required="required"
+                                    formControlName="uf"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <div class="input-group-text">
+                                      <i class="fa fa-address-card"></i>
+                                    </div>
+                                  </div>
+                                  <input
+                                    id="crmPrestador"
+                                    name="crmPrimariaPrestador"
+                                    placeholder="CRM"
+                                    type="text"
+                                    required="required"
+                                    class="form-control"
+                                    formControlName="crm"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <span
+                                  id="sexoPrestadorHelpBlock"
+                                  class="form-text text-muted"
+                                  >Especialidade</span
+                                >
+                                <select
+                                  id="especialidadePrestador"
+                                  name="especialidadePrestador"
+                                  class="custom-select"
+                                  required="required"
+                                  multiple
+                                  (selectionChange)="changed()"
+                                  formControlName="especialidade"
+                                >
+                                  <option
+                                    *ngFor="
+                                      let especialidade of listEspecialidade
+                                    "
+                                    [value]="especialidade.codigo"
+                                  >
+                                    {{ especialidade.descricao }}
+                                  </option>
+                                </select>
+                              </div>
+                            </div>
+
+                            <div class="form-group row">
+                              <div class="col-12">
+                                <button
+                                  name="submit"
+                                  type="submit"
+                                  class="btn btn-primary"
+                                  [disabled]="!this.prestadorForm.valid"
+                                  (click)="cadastraPrestador()"
+                                >
+                                  Cadastrar Prestador
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+  </div>
+</div>

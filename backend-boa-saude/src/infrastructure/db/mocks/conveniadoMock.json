@@ -1,0 +1,20 @@
+{
+    "id_conveniado": 1,
+    "razao_social": "Gabriel e Mariane Medicos ME",
+    "nome_fantasia": "clinica dia",
+    "cnpj": "14866939000148",
+    "inscricao_estadual": "449549756735",
+    "data_abertura": "23\/04\/2016",
+    "email": "teste@gmail.com",
+    "cep": "12453-980",
+    "endereco": "Rua Soldado José Fernandes",
+    "numero": 204,
+    "bairro": "Crispim",
+    "cidade": "Itatiba",
+    "uf": "sp",
+    "telefone": "1226187385",
+    "telefone_secundario": "12995588586",
+    "acessibilidade": true,
+    "data_associacao": "01\/01\/2021",
+    "situacao_contrato": "ativo"
+}

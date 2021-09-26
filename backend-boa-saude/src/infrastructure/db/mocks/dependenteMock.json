@@ -1,0 +1,30 @@
+[
+    {
+    "id_dependente": 1,
+    "nome": "Lara Isabelly Costa",
+    "cpf": "19853110547",
+    "rg": "394239489",
+    "data_nascimento": "22\/03\/1993",
+    "sexo": "f",
+    "filiacao_primaria": "Nair Aurora Araújo",
+    "filiacao_secundaria": "Paulo Augusto Silva",
+    "cep": "13323980",
+    "endereço": "rua dos campos elisios",
+    "numero" : 25,
+    "bairro": "centro",
+    "cidade": "sao paulo",
+    "uf": "sp",
+    "estado_civil": "solteira",
+    "nome_conjuge": "",
+    "cpf_conjuge": "",
+    "telefone": "5128119067",
+    "telefone_secundario": "51989070518",
+    "email": "13323980",
+    "contato_emergencia": "Mariana Souza",
+    "telefone_emergencia": "86983040133",
+    "data_associacao": "15/12/2020",
+    "situacao_contrato": "ativo",
+    "tipo_contrato": "basico",
+    "odonto_ativo": true
+}
+]
