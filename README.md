@@ -36,3 +36,14 @@ TCC da Pós de Arquitetura de Software distribuído pela PUC Minas
 # Esquema dos componentes
 
 ![tccArquiteturaAngular](https://user-images.githubusercontent.com/49907081/134826015-626bfd3b-87ba-4384-ac63-e807693f8adc.jpg)
+
+# Diagrama de Classes:
+
+- Associado:
+
+![FrontAssociadoClasse](https://user-images.githubusercontent.com/49907081/135188234-c0a17839-bf65-4d83-8c7d-c61df5309f2a.jpg)
+
+
+- Prestador:
+
+![FrontPrestadorClasse](https://user-images.githubusercontent.com/49907081/135188237-ed55b523-b73e-4f85-9ed1-37900efa7855.jpg)
