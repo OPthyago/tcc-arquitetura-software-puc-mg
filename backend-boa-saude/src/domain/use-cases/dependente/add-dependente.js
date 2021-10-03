@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = class AddDependenteProtocol {
-	addDependente(depentente) {
+	addDependente(dependente) {
 		throw new Error('method addDependente not implemented');
 	}
 }

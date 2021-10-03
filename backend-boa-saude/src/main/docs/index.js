@@ -4,7 +4,9 @@ const {
 	prestadorPath,
 	prestadorGetByIdPath,
 	associadoPath,
-	associadoGetByIdPath
+	associadoGetByIdPath,
+	dependentePath,
+	dependenteGetByIdPath
 } = require('./paths');
 
 const { 
@@ -12,6 +14,8 @@ const {
 	prestadorParamsSchema, 
 	associadoSchema,
 	associadoParamsSchema,
+	dependenteSchema,
+	dependenteParamsSchema,
 	errorSchema 
 } = require('./schemas');
 
@@ -35,6 +39,9 @@ module.exports = {
 		},
 		{
 			name: 'Associado'
+		},
+		{
+			name: 'Dependente'
 		}
 	],
 	paths: {
@@ -42,13 +49,17 @@ module.exports = {
 		'/prestador/{id}': prestadorGetByIdPath,
 		'/associado': associadoPath,
 		'/associadoi/{id}': associadoGetByIdPath,
+		'/dependente': dependentePath,
+		'/dependente/{id}': dependenteGetByIdPath,
 	},
 	schemas: {
 		error: errorSchema,
 		prestador: prestadorSchema,
 		prestadorParams: prestadorParamsSchema,
 		associado: associadoSchema,
-		associadoParams: associadoParamsSchema
+		associadoParams: associadoParamsSchema,
+		dependente: dependenteSchema,
+		dependenteParams: dependenteParamsSchema
 	},
 	components: {
 		badRequest: badRequest,
