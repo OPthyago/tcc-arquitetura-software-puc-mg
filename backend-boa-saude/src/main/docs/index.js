@@ -1,8 +1,21 @@
 'use strict'
 
-const { prestadorPath, prestadorGetByIdPath } = require('./paths');
+const {
+	prestadorPath,
+	prestadorGetByIdPath,
+	associadoPath,
+	associadoGetByIdPath
+} = require('./paths');
+
+const { 
+	prestadorSchema, 
+	prestadorParamsSchema, 
+	associadoSchema,
+	associadoParamsSchema,
+	errorSchema 
+} = require('./schemas');
+
 const { badRequest, serverError, unauthorized } = require('./components');
-const { prestadorSchema, prestadorParamsSchema, errorSchema } = require('./schemas');
 
 module.exports = {
 	openapi: '3.0.0',
@@ -19,16 +32,23 @@ module.exports = {
 	tags: [
 		{
 			name: 'Prestador'
+		},
+		{
+			name: 'Associado'
 		}
 	],
 	paths: {
 		'/prestador': prestadorPath,
 		'/prestador/{id}': prestadorGetByIdPath,
+		'/associado': associadoPath,
+		'/associadoi/{id}': associadoGetByIdPath,
 	},
 	schemas: {
 		error: errorSchema,
 		prestador: prestadorSchema,
-		prestadorParams: prestadorParamsSchema
+		prestadorParams: prestadorParamsSchema,
+		associado: associadoSchema,
+		associadoParams: associadoParamsSchema
 	},
 	components: {
 		badRequest: badRequest,
