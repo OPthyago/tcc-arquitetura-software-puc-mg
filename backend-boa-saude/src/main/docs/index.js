@@ -6,7 +6,9 @@ const {
 	associadoPath,
 	associadoGetByIdPath,
 	dependentePath,
-	dependenteGetByIdPath
+	dependenteGetByIdPath,
+	conveniadoPath,
+	conveniadoGetByIdPath
 } = require('./paths');
 
 const { 
@@ -16,6 +18,8 @@ const {
 	associadoParamsSchema,
 	dependenteSchema,
 	dependenteParamsSchema,
+	conveniadoSchema,
+	conveniadoParamsSchema,
 	errorSchema 
 } = require('./schemas');
 
@@ -42,6 +46,9 @@ module.exports = {
 		},
 		{
 			name: 'Dependente'
+		},
+		{
+			name: 'Conveniado'
 		}
 	],
 	paths: {
@@ -51,6 +58,8 @@ module.exports = {
 		'/associadoi/{id}': associadoGetByIdPath,
 		'/dependente': dependentePath,
 		'/dependente/{id}': dependenteGetByIdPath,
+		'/conveniado': conveniadoPath,
+		'/conveniado/{id}': conveniadoGetByIdPath
 	},
 	schemas: {
 		error: errorSchema,
@@ -59,7 +68,9 @@ module.exports = {
 		associado: associadoSchema,
 		associadoParams: associadoParamsSchema,
 		dependente: dependenteSchema,
-		dependenteParams: dependenteParamsSchema
+		dependenteParams: dependenteParamsSchema,
+		conveniado: conveniadoSchema,
+		conveniadoParams: conveniadoParamsSchema
 	},
 	components: {
 		badRequest: badRequest,

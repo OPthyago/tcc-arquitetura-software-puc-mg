@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = {
-	description: 'Sucesso',
+	description: 'Bad Request',
 	content: {
 		'application/json': {
 			schema: {

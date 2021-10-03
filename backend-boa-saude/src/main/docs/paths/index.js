@@ -4,6 +4,8 @@ const associadoPath = require('./associado/associadoPath');
 const associadoGetByIdPath = require('./associado/associadoGetByIdPath');
 const dependentePath = require('./dependente/dependentePath');
 const dependenteGetByIdPath = require('./dependente/dependenteGetByIdPath');
+const conveniadoPath = require('./conveniado/conveniadoPath');
+const conveniadoGetByIdPath = require('./conveniado/conveniadoGetByIdPath');
 
 module.exports = {
 	prestadorPath,
@@ -11,5 +13,7 @@ module.exports = {
 	associadoPath,
 	associadoGetByIdPath,
 	dependentePath,
-	dependenteGetByIdPath
+	dependenteGetByIdPath,
+	conveniadoPath,
+	conveniadoGetByIdPath
 }
