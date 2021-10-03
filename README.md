@@ -47,3 +47,14 @@ TCC da Pós de Arquitetura de Software distribuído pela PUC Minas
 - Prestador:
 
 ![FrontPrestadorClasse](https://user-images.githubusercontent.com/49907081/135188237-ed55b523-b73e-4f85-9ed1-37900efa7855.jpg)
+
+- Conveniado:
+
+![FrontConveniadoClasse](https://user-images.githubusercontent.com/49907081/135758830-bed6026b-40dc-47d3-92ab-75ee29204edf.jpg)
+
+
+- Dependente:
+
+![FrontDependenteClasse](https://user-images.githubusercontent.com/49907081/135758822-c04e6803-516d-4f49-8de2-abf6d7918c57.jpg)
+
+
