@@ -1,13 +1,8 @@
 'use strict'
 
-const prestadorPath = require('./paths/prestador/prestadorPath');
-const prestadorGetByIdPath = require('./paths/prestador/prestadorGetByIdPath');
-const badRequest = require('./components/badRequest');
-const serverError = require('./components/serverError');
-const unauthorized = require('./components/unauthorized');
-const prestadorSchema = require('./schemas/prestador/prestadorSchema');
-const prestadorParamsSchema = require('./schemas/prestador/prestadorParamsSchema');
-const errorSchema = require('./schemas/errorSchema');
+const { prestadorPath, prestadorGetByIdPath } = require('./paths');
+const { badRequest, serverError, unauthorized } = require('./components');
+const { prestadorSchema, prestadorParamsSchema, errorSchema } = require('./schemas');
 
 module.exports = {
 	openapi: '3.0.0',

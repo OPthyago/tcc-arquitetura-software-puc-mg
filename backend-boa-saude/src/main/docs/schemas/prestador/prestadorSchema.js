@@ -1,6 +1,6 @@
 'use strict'
 
-const successSchema = require('../successSchema')
+const successSchema = require('../returnSchema/successSchema')
 
 module.exports = successSchema(
 	{
