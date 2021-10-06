@@ -3,6 +3,9 @@
 # Backend Boa Saúde
 TCC da Pós de Arquitetura de Software distribuído pela PUC Minas
 
+# Macro Arquitetura
+![Macro arquitetura(1)](https://user-images.githubusercontent.com/8484727/136124031-1e1b8643-2a67-4762-a491-bacfe62b2b29.jpeg)
+
 # Endpoint de teste
 
 - http://localhost:3000/api/prestador
